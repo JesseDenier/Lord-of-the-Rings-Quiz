@@ -1,0 +1,149 @@
+@import url(normalize.css);
+
+a {
+  color: #551a00;
+  text-decoration: none;
+}
+
+body {
+  font-family: "lora";
+  margin: 0px;
+  background-color: #b5ba8b;
+  text-align: center;
+  color: #551a00;
+}
+
+h2 {
+  font-size: calc(1.25vw + 16px);
+}
+
+button {
+  margin: 10px;
+  background-color: #8c673e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "lora";
+  font-weight: bold;
+  color: #551a00;
+}
+
+button:hover {
+  background-color: #928803;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeLeft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.score {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.fullScreenContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#quizStart p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: calc(1vw + 11.5px);
+}
+
+#questionContainer {
+  display: block;
+  font-weight: bold;
+}
+
+#answerContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer {
+  display: block;
+  width: 40vw;
+  min-width: 250px;
+}
+
+form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.formLine2 {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Below is CSS for javascript created fadeOut messages. */
+.checkMessage {
+  position: fixed;
+  top: 0;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+}
+#correctMessage {
+  background-image: url(../imgs/Frodo.png);
+  background-size: contain;
+  width: 100px;
+}
+#wrongMessage {
+  background-image: url(../imgs/kisspng-sauron-the-lord-of-the-rings-eye-the-silmarillion-5b26e55a0a05c1.1149775615292757380411.png);
+  background-size: cover;
+}
+#minusFive {
+  color: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: calc(0.25vw + 50px);
+  margin-right: 20px;
+  transform: rotate(-5deg);
+}
+#plusOne {
+  color: green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: calc(0.75vw + 40px);
+  margin-left: calc(3.25vw + 65px);
+  transform: rotate(5deg);
+}
